@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo-daksh.png" type="image/icon type">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>IPO-Filling Form</title>
+    <script type="text/javascript" src="form.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox">
+            <div class="hemburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./product.html">Product</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./career.html">Career</a></li>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'"
+                        style="width:auto;">Login</a></li>
+            </ul>
+            <a href="./index.html">
+                <h1 class="logo">IPO-TRACKER</h1>
+            </a>
+        </div>
+    </nav>
+
+    <!-- login -->
+    <div id="id01" class="modal">
+        <form class="login-form" name="loginform">
+            <div class="imgcontainer">
+                <img src="./img/logo-daksh.png" alt="Avatar" class="avatar">
+            </div>
+            <div>
+                <p for="exampleInputEmail1">
+                    Email Address
+                </p><br>
+                <input type="email" class="form-control" name="email1" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" required>
+                <br>
+                <small id="emailHelp" class="sm-heading">We'll never share your email with anyone
+                    else.</small>
+            </div><br>
+            <div>
+                <p for="exampleInputPassword1">
+                    Password
+                </p><br>
+                <input name="pass1" type="password" class="form-control" id="exampleInputPassword1" required></input>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <span class="sm-heading" for="exampleCheck1">Check Me Out</span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" onclick="login()">Login</button>
+                <button type="btn" class="btn btn-primary"
+                    onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+            </div>
+            <em class="sm-heading">Don't have an Ipo-Tracker account? <a href="#"
+                    onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</a></em>
+        </form>
+    </div>
+
+    <div id="id02" class="modal" name="signupform" action="#">
+        <form class="login-form">
+            <div class="imgcontainer">
+                <img src="./img/logo-daksh.png" alt="Avatar" class="avatar">
+            </div>
+            <div>
+                <p for="exampleInputEmai1">
+                    Email Address
+                </p><br>
+                <input type="email" class="form-control" id="exampleInputEmai1" aria-describedby="emailHelp" required>
+                <br>
+                <small id="emailHelp" class="sm-heading">We'll never share your email with anyone
+                    else.</small>
+            </div><br>
+            <div>
+                <p for="exampleInputPasswod1">
+                    Password
+                </p><br>
+                <input type="password" class="form-control" id="exampleInputPasswod1" required>
+            </div>
+            <div>
+                <p for="exampleInputPassword2">
+                    Confirm Password
+                </p><br>
+                <input type="password" class="form-control" id="exampleInputPassword2" required>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="sm-heading" for="exampleCheck1">Check Me Out</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" onclick="signup();">Sign Up</button>
+                <button type="btn" class="btn btn-primary"
+                    onclick="document.getElementById('id02').style.display='none'">Cancel</button>
+            </div>
+            <b></b>
+        </form>
+    </div>
+
+    <form action="#" name="ipoform">
+        <div class="form-container ipo-form">
+            <h1>Apply For IPO</h1>
+            <hr>
+            <label for="query-select">Select Company For which you want to apply for IPO</label>
+            <select id="query-select">
+                <option>Bajaj Energy</option>
+                <option>LIC IPO</option>
+            </select><br>
+            <label for="query-select">Select Inverstor Status &nbsp;</label>
+            <select id="query-select">
+                <option>IND Retail</option>
+                <option>IND HNI</option>
+            </select><br>
+            <h3>Bid Details: </h3>
+            <hr>
+            <label for="shareBid">Share Bid For</label>
+            <input type="number" id="sbf" placeholder="Enter quanitiy of share" name="quanofshare" required><br>
+            <label for="pricepershare">Price Per Share</label>
+            <input type="number" id="pps" placeholder="Enter price per share" name="pricpershare" required><br>
+
+            <h3>Applicant Details</h3>
+            <label for="pan">PAN Number</label>
+            <input type="text" id="pan" name="pan" placeholder="10 Digit Pan Number" pattern="[A-Z0-9]+"><br>
+            <label for="name">Enter Full Name</label>
+            <input type="text" id="fname" name="applicantname" placeholder="first name + middle name + last name" pattern="[a-zA-Z]+[ ][a-zA-Z]+[ ][a-zA-Z]+" required><br>
+            <label for="birthdate">Birthdate</label>
+            <input type="date" name="date" id="birthdate" required>
+
+            <h3>Depository Detials</h3>
+            <label for="query-select">Depository &nbsp;</label>
+            <select id="query-select">
+                <option>NSDL</option>
+                <option>CDSL</option>
+            </select><br>
+
+            <label for="dpid">Dp ID</label>
+            <input type="number" id="dpid" name="dpid" placeholder="Enter 16 digit DP ID."><br>
+            <label for="dpname">DP NAME</label>
+            <input type="text" id="dpname" name="dpname" placeholder="HDFC bank / Yes Bank / VSC ext" pattern="[A-Za-z]+"><br>
+
+
+            <h3>Bank details</h3>
+            <label for="bankname">Bank NAME</label>
+            <input type="text" id="bname" name="bankname" placeholder="HDFC bank / Yes Bank / BOB / SBI" pattern="[A-Za-z]+"><br>
+            <label for="accountnum">Account Number</label>
+            <input type="number" id="accountnum" name="accountnum" placeholder="Enter Your Account Number"><br>
+            <label for="query-select">Nationality&nbsp;</label>
+            <select id="query-select">
+                <option>Indian</option>
+                <option>Other</option>
+            </select><br>
+            <button type="submit" class="btn btn-primary" onclick="return validate_form();">Apply For IPO</button>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="container footer-wraper">
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/profile.php?id=100006101223294" target="_blank"><i
+                        class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://twitter.com/MeetPat82332235" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://www.instagram.com/patel_meet_1908/" target="_blank"><i
+                        class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/meet-patel-a048231a0/" target="_blank"><i
+                        class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+            <p>
+                Ipo-Tracker &copy; 2021,All Right Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

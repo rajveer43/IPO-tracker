@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>IPO-TRACKER</title>
+    <script type="text/javascript" src="form.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox">
+            <div class="hemburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./product.html">Product</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./career.html">Career</a></li>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'"
+                        style="width:auto;">Login</a></li>
+            </ul>
+            <a href="./index.html">
+                <h1 class="logo">IPO-TRACKER</h1>
+            </a>
+        </div>
+    </nav>
+    <!-- login -->
+    <div id="id01" class="modal">
+        <form class="login-form" name="loginform">
+            <div class="imgcontainer">
+                <img src="./img/logo-daksh.png" alt="Avatar" class="avatar">
+            </div>
+            <div>
+                <p for="exampleInputEmail1">
+                    Email Address
+                </p><br>
+                <input type="email" class="form-control" name="email1" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" required>
+                <br>
+                <small id="emailHelp" class="sm-heading">We'll never share your email with anyone
+                    else.</small>
+            </div><br>
+            <div>
+                <p for="exampleInputPassword1">
+                    Password
+                </p><br>
+                <input name="pass1" type="password" class="form-control" id="exampleInputPassword1" required></input>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <span class="sm-heading" for="exampleCheck1">Check Me Out</span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" onclick="login()">Login</button>
+                <button type="btn" class="btn btn-primary"
+                    onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+            </div>
+            <em class="sm-heading">Don't have an Ipo-Tracker account? <a href="#"
+                    onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</a></em>
+        </form>
+    </div>
+
+    <div id="id02" class="modal" name="signupform" action="#">
+        <form class="login-form">
+            <div class="imgcontainer">
+                <img src="./img/logo-daksh.png" alt="Avatar" class="avatar">
+            </div>
+            <div>
+                <p for="exampleInputEmai1">
+                    Email Address
+                </p><br>
+                <input type="email" class="form-control" id="exampleInputEmai1" aria-describedby="emailHelp" required>
+                <br>
+                <small id="emailHelp" class="sm-heading">We'll never share your email with anyone
+                    else.</small>
+            </div><br>
+            <div>
+                <p for="exampleInputPasswod1">
+                    Password
+                </p><br>
+                <input type="password" class="form-control" id="exampleInputPasswod1" required>
+            </div>
+            <div>
+                <p for="exampleInputPassword2">
+                    Confirm Password
+                </p><br>
+                <input type="password" class="form-control" id="exampleInputPassword2" required>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="sm-heading" for="exampleCheck1">Check Me Out</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" onclick="signup();">Sign Up</button>
+                <button type="btn" class="btn btn-primary"
+                    onclick="document.getElementById('id02').style.display='none'">Cancel</button>
+            </div>
+            <b></b>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container container">
+            <h1 class="main-title">A to Z for IPO. </h1>
+            <h3>We are here to provide you information about IPO-Details & You can Apply your IPO
+                with us using UPI.</h3>
+            <a href="#testimonials" class="btn btn-primary">What our Customer Says</a>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2 class="testimonial-title">What our customer say</h2>
+        <div class="testimonial-container container">
+            <div class="testimonial-box">
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+
+                </div>
+                <p class="testimonial-text">One of the Easy Way to Fill the Ipo with Ipo-Tracker, Now I not Going to
+                    bank to fill IPO form in these Covid Era, Best Company For IPO-Tracking.</p>
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="./img/meetProf.jpg" alt="">
+                    </div>
+                    <p class="customer-name">Meet Patel</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+
+                </div>
+                <p class="testimonial-text">Easy & Fast Payment make Ipo filling with in fraction of secound, And Easy
+                    Interface Helps Us to fill IPO in few Clicks Which Save's Lots of time.</p>
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="./img/dakshProf.jpg" alt="">
+                    </div>
+                    <p class="customer-name">Daksh Patel</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+
+                </div>
+                <p class="testimonial-text">Upcomming IPO's List and Review Helps me to select better IPO for investing
+                    as well as listing Gain, Stock Market Related Course is also Awesome, Try It.</p>
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="./img/rajveerProf.jpg" alt="">
+                    </div>
+                    <p class="customer-name">Rajveer Rathod</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+
+    <footer class="footer">
+        <div class="container footer-wraper">
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/profile.php?id=100006101223294" target="_blank"><i
+                        class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://twitter.com/MeetPat82332235" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://www.instagram.com/patel_meet_1908/" target="_blank"><i
+                        class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/meet-patel-a048231a0/" target="_blank"><i
+                        class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+            <p>
+                Ipo-Tracker &copy; 2021,All Right Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

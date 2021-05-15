@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>IPO-TRACKER</title>
+    <script type="text/javascript" src="form.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox">
+            <div class="hemburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./product.html">Product</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./career.html">Career</a></li>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'"
+                        style="width:auto;">Login</a></li>
+            </ul>
+            <a href="./index.html">
+                <h1 class="logo">IPO-TRACKER</h1>
+            </a>
+        </div>
+    </nav>
+
+   <!-- login -->
+   <div id="id01" class="modal">
+    <form class="login-form" name="loginform">
+        <div class="imgcontainer">
+            <img src="./img/logo-daksh.png" alt="Avatar" class="avatar">
+        </div>
+        <div>
+            <p for="exampleInputEmail1">
+                Email Address
+            </p><br>
+            <input type="email" class="form-control" name="email1" id="exampleInputEmail1"
+                aria-describedby="emailHelp" required>
+            <br>
+            <small id="emailHelp" class="sm-heading">We'll never share your email with anyone
+                else.</small>
+        </div><br>
+        <div>
+            <p for="exampleInputPassword1">
+                Password
+            </p><br>
+            <input name="pass1" type="password" class="form-control" id="exampleInputPassword1" required></input>
+        </div>
+        <div>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <span class="sm-heading" for="exampleCheck1">Check Me Out</span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" onclick="login()">Login</button>
+            <button type="btn" class="btn btn-primary"
+                onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+        </div>
+        <em class="sm-heading">Don't have an Ipo-Tracker account? <a href="#"
+                onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</a></em>
+    </form>
+</div>
+
+<div id="id02" class="modal" name="signupform" action="#">
+    <form class="login-form">
+        <div class="imgcontainer">
+            <img src="./img/logo-daksh.png" alt="Avatar" class="avatar">
+        </div>
+        <div>
+            <p for="exampleInputEmai1">
+                Email Address
+            </p><br>
+            <input type="email" class="form-control" id="exampleInputEmai1" aria-describedby="emailHelp" required>
+            <br>
+            <small id="emailHelp" class="sm-heading">We'll never share your email with anyone
+                else.</small>
+        </div><br>
+        <div>
+            <p for="exampleInputPasswod1">
+                Password
+            </p><br>
+            <input type="password" class="form-control" id="exampleInputPasswod1" required>
+        </div>
+        <div>
+            <p for="exampleInputPassword2">
+                Confirm Password
+            </p><br>
+            <input type="password" class="form-control" id="exampleInputPassword2" required>
+        </div>
+        <div>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="sm-heading" for="exampleCheck1">Check Me Out</label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" onclick="signup();">Sign Up</button>
+            <button type="btn" class="btn btn-primary"
+                onclick="document.getElementById('id02').style.display='none'">Cancel</button>
+        </div>
+        <b></b>
+    </form>
+</div>
+
+    <section id="ipo-menu">
+        <h2 class="ipo-menu-heading">
+            Courses Which Help's You to grow more!!!
+        </h2>
+        <div class="ipo-menu-container container">
+            <div class="ipo-menu-item">
+                <div class="ipo-image">
+                    <img src="./img/courseByKundanKishore.jpg" alt="CourseImage">
+                </div>
+                <div class="ipo-description">
+                    <h2 class="ipo-title">A Complete Course on the Indian Stock Market</h2>
+                    <p>A course curated by Kundan Kishore for investors, traders, career seekers and students of India.
+                    </p>
+                    <p class="ipo-price">Price: &#8377;: 990 + GST</p>
+                </div>
+            </div>
+            <div class="ipo-menu-item">
+                <div class="ipo-image">
+                    <img src="./img/varun.jpg" alt="Course Image">
+                </div>
+                <div class="ipo-description">
+                    <h2 class="ipo-title">FLAP- Foundational Course on investing</h2>
+                    <p>ABC of investing, Most Basic 4 hours free Course By Varun Malhotra IIM-Ahmedabad Alumini</p>
+                    <p class="ipo-price">Price: &#8377;: Free</p>
+                </div>
+            </div>
+            <div class="ipo-menu-item">
+                <div class="ipo-image">
+                    <img src="./img/financial Markets Yale.jfif">
+                </div>
+                <div class="ipo-description">
+                    <h2 class="ipo-title">Financial Markets</h2>
+                    <p>An overview of the ideas, methods, and institutions that permit human society to manage risks and
+                        foster enterprise. Emphasis on financially-savvy leadership skills</p>
+                    <p class="ipo-price">Price: &#8377;: 2110</p>
+                </div>
+            </div>
+            <div class="ipo-menu-item">
+                <div class="ipo-image">
+                    <img src="./img/finance for nonfinance.jpg" alt="Course Image">
+                </div>
+                <div class="ipo-description">
+                    <h2 class="ipo-title">Finance for Non-Finance Professionals</h2>
+                    <p>This short course surveys all the major topics covered in a full semester MBA level finance
+                        course, but with a more intuitive approach on a very high conceptual level. </p>
+                    <p class="ipo-price">Price: &#8377;: 3583</p>
+                </div>
+            </div>
+            <div class="ipo-menu-item">
+                <div class="ipo-image">
+                    <img src="./img/investement and portfolio.jpg" alt="Course Image">
+                </div>
+                <div class="ipo-description">
+                    <h2 class="ipo-title">Investment and Portfolio Management</h2>
+                    <p>In this four-course Specialization, you’ll learn the essential skills of portfolio management and
+                        personal investing.</p>
+                    <p class="ipo-price">Price: &#8377;: 450</p>
+                </div>
+            </div>
+            <div class="ipo-menu-item">
+                <div class="ipo-image">
+                    <img src="./img/NSE_Logo.svg" alt="CourseImage">
+                </div>
+                <div class="ipo-description">
+                    <h2 class="ipo-title">Fundamental Analysis for Equity</h2>
+                    <p>This course provides a foundation for understanding Fundamental Analysis.& scientifically
+                        structured Materials help's the participants understand basic concepts and terminologies.</p>
+                    <p class="ipo-price">Price: &#8377;: 1200</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container footer-wraper">
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/profile.php?id=100006101223294" target="_blank"><i
+                        class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://twitter.com/MeetPat82332235" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://www.instagram.com/patel_meet_1908/" target="_blank"><i
+                        class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/meet-patel-a048231a0/" target="_blank"><i
+                        class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+            <p>
+                Ipo-Tracker &copy; 2021,All Right Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

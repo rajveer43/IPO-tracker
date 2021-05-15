@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo-daksh.png" type="image/icon type">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>IPO-TRACKER</title>
+    <script type="text/javascript" src="form.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox">
+            <div class="hemburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./product.html">Product</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./career.html">Career</a></li>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'"
+                        style="width:auto;">Login</a></li>
+            </ul>
+            <a href="./index.html">
+                <h1 class="logo">IPO-TRACKER</h1>
+            </a>
+        </div>
+    </nav>
+    <!-- login -->
+    <div id="id01" class="modal">
+        <form class="login-form" name="loginform">
+            <div class="imgcontainer">
+                <img src="./img/logo-daksh.png" alt="Avatar" class="avatar">
+            </div>
+            <div>
+                <p for="exampleInputEmail1">
+                    Email Address
+                </p><br>
+                <input type="email" class="form-control" name="email1" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" required>
+                <br>
+                <small id="emailHelp" class="sm-heading">We'll never share your email with anyone
+                    else.</small>
+            </div><br>
+            <div>
+                <p for="exampleInputPassword1">
+                    Password
+                </p><br>
+                <input name="pass1" type="password" class="form-control" id="exampleInputPassword1" required></input>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <span class="sm-heading" for="exampleCheck1">Check Me Out</span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" onclick="login()">Login</button>
+                <button type="btn" class="btn btn-primary"
+                    onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+            </div>
+            <em class="sm-heading">Don't have an Ipo-Tracker account? <a href="#"
+                    onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</a></em>
+        </form>
+    </div>
+    <!-- sign up -->
+    <div id="id02" class="modal" name="signupform" action="#">
+        <form class="login-form">
+            <div class="imgcontainer">
+                <img src="./img/logo-daksh.png" alt="Avatar" class="avatar">
+            </div>
+            <div>
+                <p for="exampleInputEmai1">
+                    Email Address
+                </p><br>
+                <input type="email" class="form-control" id="exampleInputEmai1" aria-describedby="emailHelp" required>
+                <br>
+                <small id="emailHelp" class="sm-heading">We'll never share your email with anyone
+                    else.</small>
+            </div><br>
+            <div>
+                <p for="exampleInputPasswod1">
+                    Password
+                </p><br>
+                <input type="password" class="form-control" id="exampleInputPasswod1" required>
+            </div>
+            <div>
+                <p for="exampleInputPassword2">
+                    Confirm Password
+                </p><br>
+                <input type="password" class="form-control" id="exampleInputPassword2" required>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="sm-heading" for="exampleCheck1">Check Me Out</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" onclick="signup();">Sign Up</button>
+                <button type="btn" class="btn btn-primary"
+                    onclick="document.getElementById('id02').style.display='none'">Cancel</button>
+            </div>
+            <b></b>
+        </form>
+    </div>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-img">
+                <img src="./img/logo-daksh.png" alt="About US">
+            </div>
+            <div class="about-text">
+                <h1 class="main-title" style="margin:2rem 0;">Apply for IPO Online.</h1>
+                <p>Apply online and invest in companies listing on the Indian exchanges with an IPO (Initial Public
+                    Offering) using mobile UPI with your Ipo-Tracker account.</p>
+                <a href="#ipo" class="btn btn-primary" style="margin:2rem 0;">Apply For An IPO</a>
+                <p>Don't have a Ipo-Tracker account?<a href="#"
+                        onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--upcomming ipo's image with form link-->
+    <section id="ipo">
+        <h2>Apply IPO</h2>
+        <div class="ipo-container container">
+            <div class="ipo-type">
+                <div class="img-container">
+                    <img src="./img/lic logo.png" alt="ipo1">
+                    <div class="img-content">
+                        <h3>LIC</h3>
+                        <a href="./form.html" class="btn btn-primary" target="_blank">Apply for IPO</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ipo-type">
+                <div class="img-container">
+                    <img src="./img/baja-logo2.jpg" alt="Bajaj Logo2">
+                    <div class="img-content">
+                        <h3>Bajaj Energy</h3>
+                        <a href="./form.html" class="btn btn-primary" target="_blank">Apply For IPO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--upcomming ipo -->
+    <section id="ipo" class="mini-container">
+        <h2 class="lg-heading" style="margin-top: 4rem;">Upcoming IPOs</h2>
+        <div class="table-container current-ipo">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th>Date</th>
+                        <th class="text-center">Price range</th>
+                        <th class="text-center">Min. qty.</th>
+                        <th title="Red Herring Prospectus">(D)RHP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">
+                            <a href="/ipo/246670/nsdl">NSDL </a>
+                        </td>
+                        <td class="date">
+                            To be announced
+                        </td>
+                        <td class="text-center">
+                            –
+                        </td>
+                        <td class="text-center">
+                            –
+                        </td>
+                        <td title="Red Herring Prospectus">
+                            –
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            <a href="/ipo/245558/national-commodity-derivatives-exchange-limited">National Commodity
+                                &amp; Derivatives Exchange (NCDEX)
+                            </a>
+                        </td>
+                        <td class="date">
+                            To be announced
+                        </td>
+                        <td class="text-center">
+                            –
+                        </td>
+                        <td class="text-center">
+                            –
+                        </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/feb-2020/national-commodity-and-derivatives-exchange-limited_45970.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            <a href="/ipo/244557/life-insurance-corporation">LIC </a>
+                        </td>
+                        <td class="date">
+                            To be announced
+                        </td>
+                        <td class="text-center">
+                            –
+                        </td>
+                        <td class="text-center">
+                            –
+                        </td>
+                        <td title="Red Herring Prospectus">
+                            –
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            <a href="/ipo/238300/bajaj-energy">Bajaj Energy </a>
+                        </td>
+                        <td class="date">
+                            To be announced
+                        </td>
+                        <td class="text-center">
+                            –
+                        </td>
+                        <td class="text-center">
+                            –
+                        </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/apr-2019/bajaj-energy-limited_42638.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--colsed ipo table-->
+        <h2 class="lg-heading">Closed IPOs</h2>
+        <div class="table-container closed-ipo">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th>Date</th>
+                        <th class="text-center">Price range</th>
+                        <th class="text-center">Min. qty.</th>
+                        <th title="Red Herring Prospectus">(D)RHP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/289931/macrotech-developers">Macrotech Developers </a>
+                        </td>
+                        <td class="date">
+                            07 Apr 2021 – 09 Apr 2021 </td>
+                        <td class="text-center">
+                            483 – 486 </td>
+                        <td class="text-center">
+                            30 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/feb-2021/macrotech-developers-limited_49172.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/287940/barbeque-nation-2">Barbeque Nation </a>
+                        </td>
+                        <td class="date">
+                            24 Mar 2021 – 26 Mar 2021 </td>
+                        <td class="text-center">
+                            498 – 500 </td>
+                        <td class="text-center">
+                            30 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/mar-2021/barbeque-nation-hospitality-limited_49587.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/287114/suryoday-small-finance-bank">Suryoday Small Finance Bank </a>
+                        </td>
+                        <td class="date">
+                            17 Mar 2021 – 19 Mar 2021 </td>
+                        <td class="text-center">
+                            303 – 305 </td>
+                        <td class="text-center">
+                            49 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/oct-2020/suryoday-small-finance-bank-limited_47774.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/287111/nazara-technologies">Nazara Technologies </a>
+                        </td>
+                        <td class="date">
+                            17 Mar 2021 – 19 Mar 2021 </td>
+                        <td class="text-center">
+                            1100 – 1101 </td>
+                        <td class="text-center">
+                            13 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/mar-2021/nazara-technologies-limited-rhp_49469.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/287102/kalyan-jewellers">Kalyan Jewellers </a>
+                        </td>
+                        <td class="date">
+                            16 Mar 2021 – 18 Mar 2021 </td>
+                        <td class="text-center">
+                            86 – 87 </td>
+                        <td class="text-center">
+                            172 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/aug-2020/kalyan-jewellers-india-limited_47390.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/287015/laxmi-organic">Laxmi Organic </a>
+                        </td>
+                        <td class="date">
+                            15 Mar 2021 – 17 Mar 2021 </td>
+                        <td class="text-center">
+                            129 – 130 </td>
+                        <td class="text-center">
+                            115 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/dec-2020/laxmi-organic-industries-limited-drhp_48448.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/287001/craftsman-automation">Craftsman Automation </a>
+                        </td>
+                        <td class="date">
+                            15 Mar 2021 – 17 Mar 2021 </td>
+                        <td class="text-center">
+                            1488 – 1490 </td>
+                        <td class="text-center">
+                            10 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/dec-2020/craftsman-automation-limited_48450.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/286976/anupam-rasayan">Anupam Rasayan </a>
+                        </td>
+                        <td class="date">
+                            12 Mar 2021 – 16 Mar 2021 </td>
+                        <td class="text-center">
+                            553 – 555 </td>
+                        <td class="text-center">
+                            27 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/dec-2020/anupam-rasayan-india-limited_48559.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/285188/mtar-technologies">MTAR Technologies </a>
+                        </td>
+                        <td class="date">
+                            03 Mar 2021 – 05 Mar 2021 </td>
+                        <td class="text-center">
+                            574 – 575 </td>
+                        <td class="text-center">
+                            26 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/feb-2021/mtar-technologies-ltd_49246.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/284839/heranba-industries">Heranba Industries </a>
+                        </td>
+                        <td class="date">
+                            23 Feb 2021 – 25 Feb 2021 </td>
+                        <td class="text-center">
+                            626 – 627 </td>
+                        <td class="text-center">
+                            23 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/feb-2021/heranba-industries-limited_49129.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/284034/nureca">Nureca </a>
+                        </td>
+                        <td class="date">
+                            15 Feb 2021 – 17 Feb 2021 </td>
+                        <td class="text-center">
+                            396 – 400 </td>
+                        <td class="text-center">
+                            35 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/nov-2020/nureca-limited_48168.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/284027/railtel-corporation-of-india">Railtel Corporation of India </a>
+                        </td>
+                        <td class="date">
+                            16 Feb 2021 – 18 Feb 2021 </td>
+                        <td class="text-center">
+                            93 – 94 </td>
+                        <td class="text-center">
+                            155 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/sep-2020/railtel-corporation-of-india-limited-draft-red-herring-prospectus_47788.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/286434/easytrip">Easytrip </a>
+                        </td>
+                        <td class="date">
+                            08 Mar 2021 – 10 Mar 2021 </td>
+                        <td class="text-center">
+                            186 – 187 </td>
+                        <td class="text-center">
+                            80 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/feb-2021/easy-trip-planners-limited-addendum-to-drhp_49089.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/280729/home-first-finance">Home First Finance </a>
+                        </td>
+                        <td class="date">
+                            21 Jan 2021 – 25 Jan 2021 </td>
+                        <td class="text-center">
+                            517 – 518 </td>
+                        <td class="text-center">
+                            28 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/nov-2020/home-first-finance-company-india-ltd-addendum_48295.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/247235/indian-railway-finance-corporation">Indian Railway Finance Corporation
+                                (IRFC)
+                            </a>
+                        </td>
+                        <td class="date">
+                            18 Jan 2021 – 20 Jan 2021 </td>
+                        <td class="text-center">
+                            25 – 26 </td>
+                        <td class="text-center">
+                            575 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/jan-2020/indian-railway-finance-corporation-limited_45739.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/280075/indigo-paints">Indigo Paints </a>
+                        </td>
+                        <td class="date">
+                            20 Jan 2021 – 22 Jan 2021 </td>
+                        <td class="text-center">
+                            1488 – 1490 </td>
+                        <td class="text-center">
+                            10 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/nov-2020/indigo-paints-limited-drhp_48167.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/281807/stove-kraft">Stovekraft </a>
+                        </td>
+                        <td class="date">
+                            25 Jan 2021 – 28 Jan 2021 </td>
+                        <td class="text-center">
+                            384 – 385 </td>
+                        <td class="text-center">
+                            38 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/feb-2020/stove-kraft-limited_45894.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/277138/mrs-bector-food-specialities">Mrs. Bector Food Specialities </a>
+                        </td>
+                        <td class="date">
+                            15 Dec 2020 – 17 Dec 2020 </td>
+                        <td class="text-center">
+                            286 – 288 </td>
+                        <td class="text-center">
+                            50 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/dec-2020/mrs-bectors-food-specialities-limited_48392.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/238264/burger-king-india">Burger King India </a>
+                        </td>
+                        <td class="date">
+                            02 Dec 2020 – 04 Dec 2020 </td>
+                        <td class="text-center">
+                            59 – 60 </td>
+                        <td class="text-center">
+                            250 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/nov-2019/burger-king-india-limited_44876.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/272966/gland-pharma">Gland Pharma </a>
+                        </td>
+                        <td class="date">
+                            09 Nov 2020 – 11 Nov 2020 </td>
+                        <td class="text-center">
+                            1490 – 1500 </td>
+                        <td class="text-center">
+                            10 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/jul-2020/gland-pharma-limited_47048.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/282047/brookfield-reit">Brookfield REIT </a>
+                        </td>
+                        <td class="date">
+                            03 Feb 2021 – 05 Feb 2021 </td>
+                        <td class="text-center">
+                            274 – 275 </td>
+                        <td class="text-center">
+                            200 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/reit-issues/sep-2020/brookfield-india-real-estate-trust_47786.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/239466/equitas-small-finance-bank">Equitas Small Finance Bank </a>
+                        </td>
+                        <td class="date">
+                            20 Oct 2020 – 22 Oct 2020 </td>
+                        <td class="text-center">
+                            32 – 33 </td>
+                        <td class="text-center">
+                            450 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/oct-2020/equitas-small-finance-bank-limited_47857.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/239881/uti-asset-management-company">UTI Asset Management Company </a>
+                        </td>
+                        <td class="date">
+                            29 Sep 2020 – 01 Oct 2020 </td>
+                        <td class="text-center">
+                            552 – 554 </td>
+                        <td class="text-center">
+                            27 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/dec-2019/uti-asset-management-company-limited_45426.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/268647/mazagon-dock-shipbuilders-ipo">Mazagon Dock Shipbuilders </a>
+                        </td>
+                        <td class="date">
+                            29 Sep 2020 – 01 Oct 2020 </td>
+                        <td class="text-center">
+                            135 – 145 </td>
+                        <td class="text-center">
+                            103 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www1.nseindia.com/content/equities/Mazagon_RHP.pdf"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/268927/likhitha-infrastructure-limited-ipo">Likhitha Infrastructure Limited
+                            </a>
+                        </td>
+                        <td class="date">
+                            29 Sep 2020 – 07 Oct 2020 </td>
+                        <td class="text-center">
+                            117 – 120 </td>
+                        <td class="text-center">
+                            125 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www1.nseindia.com/content/equities/Likhitha_RHP.pdf"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/242034/computer-age-management-services-limited">CAMS </a>
+                        </td>
+                        <td class="date">
+                            21 Sep 2020 – 23 Sep 2020 </td>
+                        <td class="text-center">
+                            1229 – 1230 </td>
+                        <td class="text-center">
+                            12 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/sep-2020/computer-age-management-services-limited_47555.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/238262/chemcon-speciality-chemicals">Chemcon Speciality Chemicals </a>
+                        </td>
+                        <td class="date">
+                            21 Sep 2020 – 23 Sep 2020 </td>
+                        <td class="text-center">
+                            338 – 340 </td>
+                        <td class="text-center">
+                            44 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/sep-2020/chemcon-speciality-chemicals-limited-red-herring-prospectus-rhp-_47551.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/266722/route-mobile-ipo">Route Mobile </a>
+                        </td>
+                        <td class="date">
+                            09 Sep 2020 – 11 Sep 2020 </td>
+                        <td class="text-center">
+                            345 – 350 </td>
+                        <td class="text-center">
+                            40 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/oct-2019/route-mobile-limited_44646.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/266431/happiest-minds">Happiest Minds </a>
+                        </td>
+                        <td class="date">
+                            07 Sep 2020 – 09 Sep 2020 </td>
+                        <td class="text-center">
+                            165 – 166 </td>
+                        <td class="text-center">
+                            90 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/jun-2020/happiest-minds-technologies-limited_46843.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/268091/angel-broking">Angel Broking </a>
+                        </td>
+                        <td class="date">
+                            22 Sep 2020 – 24 Sep 2020 </td>
+                        <td class="text-center">
+                            305 – 306 </td>
+                        <td class="text-center">
+                            49 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.sebi.gov.in/filings/public-issues/jul-2020/angel-broking-limited-addendum-to-drhp_47089.html"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/262309/mindspace-reit">Mindspace REIT </a>
+                        </td>
+                        <td class="date">
+                            27 Jul 2020 – 29 Jul 2020 </td>
+                        <td class="text-center">
+                            274 – 275 </td>
+                        <td class="text-center">
+                            200 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www1.nseindia.com/content/ipo/RHP_MINDSPACE.zip" target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/258493/yes-bank-fpo">Yes Bank [FPO] </a>
+                        </td>
+                        <td class="date">
+                            15 Jul 2020 – 17 Jul 2020 </td>
+                        <td class="text-center">
+                            12 – 13 </td>
+                        <td class="text-center">
+                            1000 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www1.nseindia.com/content/equities/FPO_RHP_YESBANK.pdf"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/260304/rossari-biotech">Rossari Biotech </a>
+                        </td>
+                        <td class="date">
+                            13 Jul 2020 – 15 Jul 2020 </td>
+                        <td class="text-center">
+                            423 – 425 </td>
+                        <td class="text-center">
+                            35 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www1.nseindia.com/content/ipo/RHP_ROSSARI.zip" target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/238125/sbi-cards-and-payment-services">SBI Cards and Payment Services </a>
+                        </td>
+                        <td class="date">
+                            02 Mar 2020 – 05 Mar 2020 </td>
+                        <td class="text-center">
+                            750 – 755 </td>
+                        <td class="text-center">
+                            19 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www1.nseindia.com/content/ipo/RHP_SBICARDS.zip" target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/245154/antony-waste-handling-cell">Antony Waste Handling Cell </a>
+                        </td>
+                        <td class="date">
+                            21 Dec 2020 – 23 Dec 2020 </td>
+                        <td class="text-center">
+                            313 – 315 </td>
+                        <td class="text-center">
+                            47 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www1.nseindia.com/content/ipo/RHP_ANTONY.zip" target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/242509/indian-telephone-industries">Indian Telephone Industries [FPO] (ITI)
+                            </a>
+                        </td>
+                        <td class="date">
+                            24 Jan 2020 – 05 Feb 2020 </td>
+                        <td class="text-center">
+                            71 – 77 </td>
+                        <td class="text-center">
+                            150 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www1.nseindia.com/content/equities/IPO_RHP_ITIFPO.pdf"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/238267/prince-pipes-and-fittings">Prince Pipes and Fittings (Princepipe)
+                            </a>
+                        </td>
+                        <td class="date">
+                            18 Dec 2019 – 20 Dec 2019 </td>
+                        <td class="text-center">
+                            177 – 178 </td>
+                        <td class="text-center">
+                            84 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.nseindia.com/content/equities/IPO_RHP_PRINCE.pdf"
+                                target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/237929/ujjivan-small-finance-bank">Ujjivan Small Finance Bank (UJJIVANSFB)
+                            </a>
+                        </td>
+                        <td class="date">
+                            02 Dec 2019 – 04 Dec 2019 </td>
+                        <td class="text-center">
+                            36 – 37 </td>
+                        <td class="text-center">
+                            400 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://console.zerodha.com/portfolio/ipo" target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/238013/catholic-syrian-bank">Catholic Syrian Bank (CSB)
+                            </a>
+                        </td>
+                        <td class="date">
+                            22 Nov 2019 – 26 Nov 2019 </td>
+                        <td class="text-center">
+                            193 – 195 </td>
+                        <td class="text-center">
+                            75 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.nseindia.com/content/ipo/RHP_CSBBANK.zip" target="_blank">View</a>
+                        </td>
+                    </tr>
+                    <tr class="closed">
+                        <td class="name">
+                            <a href="/ipo/238006/indian-railway-catering-and-tourism-corporation">Indian Railway
+                                Catering and Tourism Corporation (IRCTC)
+                            </a>
+                        </td>
+                        <td class="date">
+                            30 Sep 2019 – 03 Oct 2019 </td>
+                        <td class="text-center">
+                            315 – 320 </td>
+                        <td class="text-center">
+                            40 </td>
+                        <td title="Red Herring Prospectus">
+                            <a href="https://www.nseindia.com/content/ipo/RHP_IRCTC.zip" target="_blank">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-wraper">
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/profile.php?id=100006101223294" target="_blank"><i
+                        class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://twitter.com/MeetPat82332235" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://www.instagram.com/patel_meet_1908/" target="_blank"><i
+                        class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/meet-patel-a048231a0/" target="_blank"><i
+                        class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+            <p>
+                Ipo-Tracker &copy; 2021,All Right Reserved
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
